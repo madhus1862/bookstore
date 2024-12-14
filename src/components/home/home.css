@@ -1,0 +1,137 @@
+/* Wrapper div for centering */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Ensure the main content fits within the background */
+main {
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  /* background-image: url('./image.png'); Replace with the correct path to your image */
+  background-size: cover; /* Make the image cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image tiling */
+  background-attachment: fixed; /* Keep the image fixed on scroll */
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Welcome section */
+#welcome {
+  background-color: #14183b; /* Semi-transparent background */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#welcome h2 {
+  font-size: 2rem;
+  color: #eef6f6;
+  animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+#welcome p {
+  font-size: 1rem;
+  color: #f6f4f4;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Featured books section */
+#featured {
+  background-color: #41456b; /* Semi-transparent background */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideInFromRight 1.5s ease-in-out;
+}
+
+#featured h2 {
+  font-size: 2rem;
+  color: #f5f3f4;
+}
+
+#featured p {
+  font-size: 1rem;
+  color: #fffefe;
+}
+
+/* Call-to-action section */
+#call-to-action {
+  background-color: rgba(42, 45, 93, 0.9); /* Semi-transparent background */
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+#call-to-action h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#call-to-action p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#call-to-action button {
+  background-color: white;
+  color: #196473;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#call-to-action button:hover {
+  background-color: #fff;
+  color: #333;
+  border-color: #4CAF50;
+  transform: scale(1.1);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}

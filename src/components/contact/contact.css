@@ -1,0 +1,49 @@
+.contact-page {
+  position: relative;
+  height: 100vh; /* Make sure the page takes up the full height */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Keep the video behind the content */
+}
+
+.contact-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0); /* Optional: makes text readable over the video */
+  z-index: 1;
+}
+
+.contact-footer h3 {
+  font-size: 24px;
+  color: #1a81ad;
+  margin-bottom: 15px;
+}
+
+.contact-footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-footer li {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.contact-footer strong {
+  color: #1d8db6;
+  font-weight: bold;
+}

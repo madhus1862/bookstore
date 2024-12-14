@@ -1,0 +1,141 @@
+/* Outer wrapper to center everything */
+.admin-page-wrapper {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;     /* Vertical centering */
+  min-height: 100vh;       /* Full screen height */
+  background-color: #333;  /* Dark background for contrast */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container with form and content */
+.admin-container {
+  width: 100%;
+  max-width: 600px;        /* Adjust the container width */
+  background-color: #fff;  /* Light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  padding: 30px;           /* Space inside the container */
+  font-family: Arial, sans-serif;
+  text-align: center;      /* Aligns text content inside */
+}
+
+/* Heading */
+.admin-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form styling */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 15px; /* Space between form fields */
+}
+
+.admin-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+  padding: 12px;
+}
+
+.admin-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.admin-form input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+.add-book-btn {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #14183b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-book-btn:hover {
+  background-color: #1c2559;
+}
+
+/* Book List Section */
+.admin-books-list {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.admin-books-list h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.book-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #0d3662;
+  color: white;
+  margin-right: 5px;
+}
+
+.edit-btn:hover {
+  background-color: #333;
+}
+
+.delete-btn {
+  background-color: #333;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #333;
+}
+
+.admin-books-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-books-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}

@@ -1,0 +1,100 @@
+/* Center the payment container on the page */
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f2f2f2;
+    margin: 0; /* Remove default margin */
+}
+
+/* Payment form container */
+.payment-wrapper {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.payment-wrapper h1 {
+    text-align: center;
+    color: #333;
+
+}
+
+/* Form styling */
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+}
+
+/* Input field styling */
+.payment-form input {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Label styling */
+.payment-form label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Pay Now button styling */
+.pay-now-btn {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.pay-now-btn:hover {
+    background-color: #e68a00;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .payment-wrapper {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .payment-form input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .pay-now-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-wrapper {
+        padding: 10px;
+    }
+
+    .payment-form input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .pay-now-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

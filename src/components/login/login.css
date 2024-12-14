@@ -1,0 +1,54 @@
+/* Wrapper div for centering */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Login container styles */
+.login-container {
+    width: 100%;
+    max-width: 400px; /* Limit the width of the form */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px; /* Adds space above the button */
+    background-color: #0c2c6d; /* Blue background color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for the Submit Button */
+input[type="submit"]:hover {
+    background-color: #4554a0; /* Darker blue on hover */
+}
