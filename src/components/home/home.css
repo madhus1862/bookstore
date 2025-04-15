@@ -64,8 +64,11 @@ main {
   font-size: 1rem;
   color: #fffefe;
 }
-
-/* Call-to-action section */
+footer {
+  text-align: center; 
+  background-color: #f1f1f1;
+  margin-top: 20px; 
+}
 #call-to-action {
   background-color: rgba(42, 45, 93, 0.9); /* Semi-transparent background */
   color: white;

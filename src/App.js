@@ -6,6 +6,7 @@ import HomePage from "./components/home/home";
 import AdminPage from "./components/admin/admin"; 
 import PaymentPage from "./components/payment/payment"; 
 import ContactPage from "./components/contact/contact"; 
+import AboutPage from "./components/about/about"; 
 
 import {
   BrowserRouter as Router,Routes,Route
@@ -23,7 +24,8 @@ function App() {
       <Route exact path='/admin' element={<AdminPage />} />
       <Route exact path='/payment' element={<PaymentPage />} />
       <Route exact path='/contact' element={<ContactPage />} />
-
+      <Route exact path='/about' element={<AboutPage />} />
+      <Route path="/checkout" element={<PaymentPage />} />
       </Routes>
     </Router>
   );

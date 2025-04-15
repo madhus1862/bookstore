@@ -1,100 +1,162 @@
-/* Center the payment container on the page */
 .payment-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 100vh; /* Full height of the viewport */
-    background-color: #f2f2f2;
-    margin: 0; /* Remove default margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
-/* Payment form container */
 .payment-wrapper {
-    width: 100%;
-    max-width: 600px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Heading styling */
-.payment-wrapper h1 {
-    text-align: center;
-    color: #333;
+/* Delivery Address & Payment Method Section Title */
+.section-title {
+  font-size: 22px;  /* Increased size */
+  font-weight: bold;
+  color: #222;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Delivery Address & Payment Method Details */
+.payment-details {
+  width: 100%;
+  display: flex;
+  font-size: 200px; /* Increased font size */
+  flex-direction: column;
+  align-items: left;/* Align labels to the left */
+}
+
+.payment-details label {
+  font-size: 20px; /* Increased size */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left; /* Ensure text aligns left */
+}
+
+.payment-details input,
+.payment-details select {
+  width: 100%;
+  max-width: 90%;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #444; /* Darker border for visibility */
+  border-radius: 5px;
 
 }
 
-/* Form styling */
+/* Payment Method Container */
+.payment-method-container {
+  width: 100%;
+  max-width: 90%;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #444; /* Darker border for visibility */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  
+}
+
+/* Payment Form */
 .payment-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 5px;
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-/* Input field styling */
-.payment-form input {
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-/* Label styling */
 .payment-form label {
-    font-size: 14px;
-    color: #555;
+  font-size: 18px; /* Increased size */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
 }
 
-/* Pay Now button styling */
+.payment-form input {
+  font-size: 18px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 12px;
+  width: 100%;
+}
+
+/* Pay Now Button */
 .pay-now-btn {
-    padding: 12px;
-    font-size: 18px;
-    background-color: #ff9900;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 90%;
 }
 
 .pay-now-btn:hover {
-    background-color: #e68a00;
+  background-color: #e68a00;
 }
 
-/* Responsive design for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .payment-wrapper {
-        padding: 15px;
-        width: 90%;
-    }
+  .payment-wrapper {
+    padding: 15px;
+    width: 95%;
+  }
 
-    .payment-form input {
-        font-size: 14px;
-        padding: 8px;
-    }
+  .payment-details input,
+  .payment-details select,
+  .payment-form input,
+  .pay-now-btn {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
 
-    .pay-now-btn {
-        font-size: 16px;
-        padding: 10px;
-    }
+  .section-title,
+  .payment-details label,
+  .payment-form label {
+    font-size: 18px; /* Slightly reduced for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
-    .payment-wrapper {
-        padding: 10px;
-    }
+  .payment-wrapper {
+    padding: 10px;
+  }
 
-    .payment-form input {
-        font-size: 12px;
-        padding: 6px;
-    }
+  .payment-details input,
+  .payment-details select,
+  .payment-form input,
+  .pay-now-btn {
+    font-size: 10px;
+    padding: 8px;
+  }
 
-    .pay-now-btn {
-        font-size: 14px;
-        padding: 8px;
-    }
+  .section-title,
+  .payment-details label,
+  .payment-form label {
+    font-size: 14px;
+  }
 }

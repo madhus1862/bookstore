@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./cart.css";
 import { useNavigate } from "react-router-dom";
+import "./cart.css";
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -15,8 +15,8 @@ const CartPage = () => {
   const total = cartItems.reduce((acc, item) => acc + parseFloat(item.price) * item.quantity, 0);
 
   const handleCheckout = () => {
-    // Navigate to checkout page
-    navigate("/checkout");
+    // Navigate to checkout page and pass cart details
+    navigate("/checkout", { state: { cartItems, total } });
   };
 
   const removeItemFromCart = (id) => {

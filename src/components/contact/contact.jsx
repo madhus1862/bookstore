@@ -3,6 +3,7 @@ import "./contact.css";
 
 const ContactPage = () => {
   return (
+    
     <div className="contact-page">
       {/* Background Video */}
       <video autoPlay loop muted className="background-video">
@@ -24,9 +25,9 @@ const ContactPage = () => {
             <strong>Office Address:</strong> srishakthicollege, Coimbatore, Tamilnadu, 641062
 
           </li>
-          <li>
+          {/* <li>
             <strong>Working Hours:</strong> Mon - Fri: 9:00 AM - 6:00 PM
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
